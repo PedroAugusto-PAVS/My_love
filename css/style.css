@@ -19,8 +19,6 @@ h1, h2 {
   font-family: "Great Vibes", cursive;
 }
 
-/* HERO */
-
 .hero {
   height: 100vh;
   position: relative;
@@ -41,27 +39,35 @@ h1, h2 {
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(20, 0, 10, 0.45),
-    rgba(20, 0, 10, 0.85)
-  );
+  background: linear-gradient(rgba(20,0,10,.35), rgba(20,0,10,.9));
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 20px;
-  animation: subir 1.4s ease;
+  padding: 22px;
+  animation: subir 1.3s ease;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: rgba(255,255,255,.16);
+  backdrop-filter: blur(10px);
+  color: #ffc2d1;
+  font-weight: 600;
 }
 
 .hero-content h1 {
   font-size: 58px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hero-content p {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 button {
@@ -72,11 +78,9 @@ button {
   color: white;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 10px 30px rgba(255, 71, 126, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 71, 126, .5);
   cursor: pointer;
 }
-
-/* CONTEÚDO */
 
 #conteudo {
   display: none;
@@ -88,9 +92,10 @@ button {
 }
 
 .contador h2,
+.mensagem h2,
 .historia h2,
 .galeria h2,
-.videos h2,
+.familia h2,
 .carta h2,
 .conquistas h2 {
   font-size: 48px;
@@ -105,8 +110,8 @@ button {
 }
 
 .tempo-box {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
   padding: 18px 8px;
   border-radius: 22px;
   backdrop-filter: blur(10px);
@@ -122,7 +127,17 @@ button {
   font-size: 12px;
 }
 
-/* HISTÓRIA */
+.mensagem {
+  background: #1c000d;
+  text-align: center;
+}
+
+.mensagem p {
+  max-width: 550px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 17px;
+}
 
 .historia {
   background: #290014;
@@ -138,8 +153,9 @@ button {
   margin: 0 auto 25px;
   padding: 25px;
   border-radius: 25px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
 }
 
 .item span {
@@ -150,8 +166,6 @@ button {
 .item h3 {
   margin: 10px 0;
 }
-
-/* GALERIA */
 
 .galeria {
   background: #120008;
@@ -170,36 +184,14 @@ button {
   height: 230px;
   object-fit: cover;
   border-radius: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.4);
-  transition: transform .3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+  transition: transform .3s, box-shadow .3s;
 }
 
 .grid img:hover {
   transform: scale(1.03);
+  box-shadow: 0 18px 45px rgba(255, 71, 126, .25);
 }
-
-/* VÍDEOS */
-
-.videos {
-  background: #290014;
-  text-align: center;
-}
-
-.video-container {
-  display: grid;
-  gap: 25px;
-  margin-top: 35px;
-}
-
-.video-container video {
-  width: 100%;
-  max-height: 520px;
-  border-radius: 25px;
-  background: black;
-  box-shadow: 0 15px 40px rgba(0,0,0,.5);
-}
-
-/* ESPECIAL */
 
 .especial {
   position: relative;
@@ -212,7 +204,7 @@ button {
   width: 100%;
   height: 85vh;
   object-fit: cover;
-  filter: brightness(55%);
+  filter: brightness(45%);
 }
 
 .especial-texto {
@@ -228,20 +220,46 @@ button {
 }
 
 .especial-texto p {
+  max-width: 520px;
+  margin: 15px auto 0;
   font-size: 18px;
   line-height: 1.6;
 }
 
-/* CONQUISTAS */
+.familia {
+  background: linear-gradient(180deg, #290014, #120008);
+  text-align: center;
+}
+
+.familia-card {
+  display: grid;
+  gap: 18px;
+  margin: 30px auto;
+  max-width: 520px;
+}
+
+.familia-card img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 18px 45px rgba(0,0,0,.45);
+}
+
+.familia p {
+  max-width: 530px;
+  margin: auto;
+  line-height: 1.8;
+}
 
 .conquistas {
-  background: linear-gradient(180deg, #290014, #120008);
+  background: #120008;
   text-align: center;
 }
 
 .conquistas img {
   width: 100%;
-  max-width: 420px;
+  max-width: 430px;
   height: 430px;
   object-fit: cover;
   border-radius: 30px;
@@ -255,26 +273,22 @@ button {
   line-height: 1.7;
 }
 
-/* CARTA */
-
 .carta {
-  background: #120008;
+  background: linear-gradient(180deg, #120008, #290014);
   text-align: center;
 }
 
 .card-carta {
   margin: 30px auto 0;
-  max-width: 520px;
-  background: rgba(255,255,255,0.09);
+  max-width: 540px;
+  background: rgba(255,255,255,.09);
   border-radius: 30px;
   padding: 30px;
   text-align: left;
   line-height: 1.8;
-  border: 1px solid rgba(255,255,255,0.13);
+  border: 1px solid rgba(255,255,255,.13);
   box-shadow: 0 20px 50px rgba(0,0,0,.4);
 }
-
-/* FINAL */
 
 .final {
   height: 100vh;
@@ -290,7 +304,7 @@ button {
 .final-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(20, 0, 10, .75);
+  background: rgba(20,0,10,.75);
 }
 
 .final-content {
@@ -305,8 +319,6 @@ button {
 .final-content p {
   font-size: 18px;
 }
-
-/* MODAL */
 
 #modal {
   display: none;
@@ -333,8 +345,6 @@ button {
   border-radius: 20px;
 }
 
-/* CORAÇÕES */
-
 .hearts {
   position: fixed;
   inset: 0;
@@ -349,8 +359,6 @@ button {
   animation: subirCoracao 6s linear forwards;
   opacity: .8;
 }
-
-/* ANIMAÇÕES */
 
 @keyframes subir {
   from {
@@ -376,8 +384,6 @@ button {
   }
 }
 
-/* CELULAR */
-
 @media (max-width: 600px) {
   section {
     padding: 65px 18px;
@@ -388,9 +394,10 @@ button {
   }
 
   .contador h2,
+  .mensagem h2,
   .historia h2,
   .galeria h2,
-  .videos h2,
+  .familia h2,
   .carta h2,
   .conquistas h2 {
     font-size: 40px;
@@ -406,6 +413,10 @@ button {
 
   .grid img {
     height: 210px;
+  }
+
+  .familia-card img {
+    height: 280px;
   }
 
   .especial-texto h2 {

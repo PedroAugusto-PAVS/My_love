@@ -1,276 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Feliz Dia dos Namorados ❤️</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- CORAÇÕES -->
   <div class="hearts"></div>
 
-  <!-- MÚSICA -->
-  <audio id="musica" loop>
+  <audio id="musica" loop autoplay>
     <source src="music/musica.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- HERO -->
-
   <section class="hero">
-
-    <img src="img/capa.jpg" class="hero-bg">
-
+    <img src="img/capa.jpg" class="hero-bg" alt="Nossa capa">
     <div class="overlay"></div>
 
     <div class="hero-content">
-
+      <span class="tag">20/12/2024</span>
       <h1>Feliz Dia dos Namorados ❤️</h1>
-
-      <p>
-        Uma pequena surpresa para a pessoa que mudou minha vida.
-      </p>
-
-      <button onclick="abrirSite()">
-        Abrir Minha Surpresa
-      </button>
-
+      <p>Uma pequena surpresa para a pessoa que mudou minha vida.</p>
+      <button onclick="abrirSite()">Abrir Minha Surpresa</button>
     </div>
-
   </section>
-
-  <!-- CONTEÚDO -->
 
   <main id="conteudo">
 
-    <!-- CONTADOR -->
-
     <section class="contador">
-
-      <h2>Nosso Tempo Juntos ⏳</h2>
-
-      <p>
-        Desde 20 de dezembro de 2024
-      </p>
-
+      <h2>Nosso Tempo Juntos</h2>
+      <p>Desde 20 de dezembro de 2024</p>
       <div id="contador"></div>
-
     </section>
 
-    <!-- HISTÓRIA -->
+    <section class="mensagem">
+      <h2>Meu Amor ❤️</h2>
+      <p>
+        Desde que você entrou na minha vida, tudo ficou mais bonito.
+        Cada momento ao seu lado virou uma lembrança que eu quero guardar para sempre.
+      </p>
+    </section>
 
     <section class="historia">
-
-      <h2>Nossa História ❤️</h2>
+      <h2>Nossa História</h2>
 
       <div class="timeline">
-
         <div class="item">
           <span>20/12/2024</span>
           <h3>O começo de tudo</h3>
-          <p>
-            O dia em que nossa história começou.
-          </p>
+          <p>O dia em que nossa história começou.</p>
         </div>
 
         <div class="item">
           <span>❤️</span>
-          <h3>Momentos Inesquecíveis</h3>
-          <p>
-            Cada abraço, cada sorriso e cada memória.
-          </p>
+          <h3>Momentos simples</h3>
+          <p>Porque até os dias comuns ficam especiais com você.</p>
         </div>
 
         <div class="item">
           <span>✨</span>
           <h3>Hoje</h3>
-          <p>
-            E eu continuo me apaixonando por você todos os dias.
-          </p>
+          <p>E eu continuo te escolhendo todos os dias.</p>
         </div>
-
       </div>
-
     </section>
 
-    <!-- GALERIA -->
-
     <section class="galeria">
-
       <h2>Nossos Momentos 📸</h2>
 
       <div class="grid">
-
-        <img src="img/foto1.jpg" onclick="abrirImagem(this.src)">
-        <img src="img/foto2.jpg" onclick="abrirImagem(this.src)">
-        <img src="img/foto3.jpg" onclick="abrirImagem(this.src)">
-        <img src="img/foto4.jpg" onclick="abrirImagem(this.src)">
-        <img src="img/foto5.jpg" onclick="abrirImagem(this.src)">
-        <img src="img/foto6.jpg" onclick="abrirImagem(this.src)">
-        <img src="img/foto7.jpg" onclick="abrirImagem(this.src)">
-        <img src="img/foto8.jpg" onclick="abrirImagem(this.src)">
-
+        <img src="img/foto1.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto2.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto3.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto4.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto5.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto6.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto7.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto8.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto13.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto14.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto15.jpg" onclick="abrirImagem(this.src)" alt="">
       </div>
-
     </section>
-
-    <!-- VÍDEOS -->
-
-    <section class="videos">
-
-      <h2>Nossos Vídeos ❤️</h2>
-
-      <div class="video-container">
-
-        <video controls playsinline>
-          <source src="video/video1.mp4" type="video/mp4">
-        </video>
-
-        <video controls playsinline>
-          <source src="video/video2.mp4" type="video/mp4">
-        </video>
-
-      </div>
-
-    </section>
-
-    <!-- CAPÍTULO ESPECIAL -->
 
     <section class="especial">
-
-      <img src="img/foto5.jpg">
+      <img src="img/foto9.jpg" alt="Momento especial">
 
       <div class="especial-texto">
-
-        <h2>
-          Meu Lugar Favorito ❤️
-        </h2>
-
+        <h2>Meu Lugar Favorito</h2>
         <p>
-          Não importa onde estamos,
-          meu lugar favorito sempre será ao seu lado.
+          Não importa onde estamos, meu lugar favorito sempre será ao seu lado.
         </p>
+      </div>
+    </section>
 
+    <section class="familia">
+      <h2>Nossa Família ❤️</h2>
+
+      <div class="familia-card">
+        <img src="img/foto10.jpg" onclick="abrirImagem(this.src)" alt="">
+        <img src="img/foto11.jpg" onclick="abrirImagem(this.src)" alt="">
       </div>
 
+      <p>
+        Obrigado por dividir comigo amor, cuidado, carinho e tantos momentos que fazem a vida valer a pena.
+      </p>
     </section>
-
-    <!-- CONQUISTAS -->
 
     <section class="conquistas">
+      <h2>Obrigado por estar comigo</h2>
 
-      <h2>Obrigado ❤️</h2>
-
-      <img src="img/foto8.jpg">
+      <img src="img/foto12.jpg" onclick="abrirImagem(this.src)" alt="">
 
       <p>
-        Obrigado por estar ao meu lado em cada conquista,
-        cada sonho e cada etapa da minha vida.
+        Obrigado por estar ao meu lado em cada conquista, cada sonho e cada etapa da minha vida.
       </p>
-
     </section>
 
-    <!-- CARTA -->
-
     <section class="carta">
-
       <h2>Uma Carta Para Você 💌</h2>
 
       <div class="card-carta">
-
         <p>
-
           Meu amor,
-
           <br><br>
-
-          Desde o dia em que você entrou na minha vida,
-          tudo ficou mais bonito.
-
+          Desde o dia em que você entrou na minha vida, tudo ficou mais leve, mais bonito e mais feliz.
           <br><br>
-
-          Obrigado por cada sorriso,
-          cada abraço,
-          cada conselho e cada momento.
-
+          Eu amo o seu jeito, seu sorriso, seu carinho e a paz que você me traz.
           <br><br>
-
-          Você transformou dias comuns
-          em lembranças especiais.
-
+          Obrigado por cada abraço, cada risada, cada momento simples e cada memória que construímos juntos.
           <br><br>
-
-          Eu sou muito feliz por ter você ao meu lado.
-
+          Ao seu lado eu aprendi que o amor está nos detalhes: em uma foto, em um cuidado, em uma conversa, em um olhar.
           <br><br>
-
-          Espero viver muitos outros
-          Dias dos Namorados com você.
-
+          Eu sou muito grato por ter você comigo.
           <br><br>
-
+          Que esse seja apenas mais um de muitos Dias dos Namorados ao seu lado.
+          <br><br>
           Eu te amo infinitamente ❤️
-
           <br><br>
-
           Com amor,
-
           <br>
-
           Pedro ❤️
-
         </p>
-
       </div>
-
     </section>
 
-    <!-- FINAL -->
-
     <section class="final">
-
       <div class="final-overlay"></div>
 
       <div class="final-content">
-
-        <h2>
-          Eu Te Amo ❤️
-        </h2>
-
-        <p>
-          E continuarei te escolhendo todos os dias.
-        </p>
-
+        <h2>Eu Te Amo ❤️</h2>
+        <p>E continuarei te escolhendo todos os dias.</p>
       </div>
-
     </section>
 
   </main>
 
-  <!-- MODAL -->
-
   <div id="modal">
-
-    <span onclick="fecharImagem()">
-      ✖
-    </span>
-
+    <span onclick="fecharImagem()">✖</span>
     <img id="imagemModal">
-
   </div>
 
-  <script src="script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
-
 </html>
