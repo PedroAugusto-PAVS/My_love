@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #120008;
   color: #fff;
@@ -12,25 +16,37 @@ body {
 }
 
 section {
-  padding: 80px 20px;
+  width: 100%;
+  padding: 70px 18px;
+  text-align: center;
 }
 
 h1, h2 {
   font-family: "Great Vibes", cursive;
 }
 
+h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* CAPA */
+
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 20px;
   overflow: hidden;
 }
 
 .hero-bg {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -39,46 +55,52 @@ h1, h2 {
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(20,0,10,.35), rgba(20,0,10,.9));
+  background: linear-gradient(
+    rgba(20,0,10,.45),
+    rgba(20,0,10,.88)
+  );
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 22px;
-  animation: subir 1.3s ease;
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
 }
 
 .tag {
   display: inline-block;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   padding: 8px 18px;
   border-radius: 30px;
-  background: rgba(255,255,255,.16);
-  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.18);
   color: #ffc2d1;
+  font-size: 14px;
   font-weight: 600;
 }
 
 .hero-content h1 {
-  font-size: 58px;
+  font-size: 46px;
+  line-height: 1.1;
   margin-bottom: 18px;
 }
 
 .hero-content p {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 28px;
 }
 
 button {
   border: none;
-  padding: 15px 28px;
+  padding: 15px 24px;
   border-radius: 40px;
   background: linear-gradient(135deg, #ff477e, #ff85a1);
   color: white;
-  font-size: 16px;
-  font-weight: 600;
-  box-shadow: 0 10px 30px rgba(255, 71, 126, .5);
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(255,71,126,.45);
   cursor: pointer;
 }
 
@@ -86,165 +108,152 @@ button {
   display: none;
 }
 
-.contador {
-  text-align: center;
-  background: linear-gradient(180deg, #120008, #290014);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contador h2,
-.mensagem h2,
-.historia h2,
-.galeria h2,
-.familia h2,
-.carta h2,
-.conquistas h2 {
-  font-size: 48px;
-  margin-bottom: 15px;
+html {
+  scroll-behavior: smooth;
 }
 
-#contador {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.tempo-box {
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.12);
-  padding: 18px 8px;
-  border-radius: 22px;
-  backdrop-filter: blur(10px);
-}
-
-.tempo-box strong {
-  display: block;
-  font-size: 25px;
-  color: #ff85a1;
-}
-
-.tempo-box span {
-  font-size: 12px;
-}
-
-.mensagem {
-  background: #1c000d;
-  text-align: center;
-}
-
-.mensagem p {
-  max-width: 550px;
-  margin: auto;
-  line-height: 1.8;
-  font-size: 17px;
-}
-
-.historia {
-  background: #290014;
-  text-align: center;
-}
-
-.timeline {
-  margin-top: 35px;
-}
-
-.item {
-  max-width: 430px;
-  margin: 0 auto 25px;
-  padding: 25px;
-  border-radius: 25px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.12);
-  box-shadow: 0 15px 35px rgba(0,0,0,.25);
-}
-
-.item span {
-  color: #ff85a1;
-  font-weight: 700;
-}
-
-.item h3 {
-  margin: 10px 0;
-}
-
-.galeria {
+body {
   background: #120008;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  padding: 70px 18px;
   text-align: center;
 }
 
-/* =========================
-   GALERIA DE FOTOS
-========================= */
-
-.grid {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  align-items: center;
+h1, h2 {
+  font-family: "Great Vibes", cursive;
 }
 
-.grid img {
+h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* CAPA */
+
+.hero {
+  min-height: 100vh;
   width: 100%;
-  max-width: 550px;
-  height: auto;
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0,0,0,.45);
-  transition: .3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(20,0,10,.45),
+    rgba(20,0,10,.88)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: rgba(255,255,255,.18);
+  color: #ffc2d1;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+button {
+  border: none;
+  padding: 15px 24px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #ff477e, #ff85a1);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(255,71,126,.45);
   cursor: pointer;
 }
 
-.grid img:hover {
-  transform: scale(1.02);
+#conteudo {
+  display: none;
 }
-
-/* =========================
-   FOTO DE DESTAQUE
-========================= */
+/* FOTO ESPECIAL */
 
 .especial {
   background: #120008;
-  padding: 80px 20px;
-  text-align: center;
+  padding: 70px 18px;
 }
 
 .especial img {
   width: 100%;
-  max-width: 700px;
+  max-width: 360px;
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 30px;
-  box-shadow: 0 20px 50px rgba(0,0,0,.5);
-  filter: none;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.55);
 }
 
 .especial-texto {
-  position: static;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .especial-texto h2 {
-  font-size: 60px;
-  margin-bottom: 15px;
+  font-size: 46px;
+  line-height: 1.1;
 }
 
-.especial-texto p {
-  max-width: 550px;
-  margin: auto;
-  line-height: 1.8;
-  font-size: 18px;
-}
+/* FAMÍLIA */
 
 .familia {
   background: linear-gradient(180deg, #290014, #120008);
-  text-align: center;
 }
 
 .familia-card {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 550px;
+  max-width: 360px;
   margin: 30px auto;
 }
 
@@ -255,59 +264,52 @@ button {
   box-shadow: 0 15px 40px rgba(0,0,0,.45);
 }
 
-.familia p {
-  max-width: 530px;
-  margin: auto;
-  line-height: 1.8;
-}
+/* CONQUISTAS */
 
 .conquistas {
   background: #120008;
-  text-align: center;
 }
 
 .conquistas img {
   width: 100%;
-  max-width: 430px;
-  height: 430px;
-  object-fit: cover;
-  border-radius: 30px;
+  max-width: 360px;
+  height: auto;
+  border-radius: 28px;
   margin: 25px 0;
   box-shadow: 0 20px 50px rgba(0,0,0,.5);
 }
 
-.conquistas p {
-  max-width: 500px;
-  margin: auto;
-  line-height: 1.7;
-}
+/* CARTA */
 
 .carta {
   background: linear-gradient(180deg, #120008, #290014);
-  text-align: center;
 }
 
 .card-carta {
+  width: 100%;
+  max-width: 360px;
   margin: 30px auto 0;
-  max-width: 540px;
   background: rgba(255,255,255,.09);
-  border-radius: 30px;
-  padding: 30px;
+  border-radius: 28px;
+  padding: 25px;
   text-align: left;
   line-height: 1.8;
+  font-size: 15px;
   border: 1px solid rgba(255,255,255,.13);
   box-shadow: 0 20px 50px rgba(0,0,0,.4);
 }
 
+/* FINAL */
+
 .final {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
-  background: url("img/foto1.jpg") center/cover no-repeat;
+  background: url("img/foto14.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 20px;
+  text-align: center;
 }
 
 .final-overlay {
@@ -319,31 +321,36 @@ button {
 .final-content {
   position: relative;
   z-index: 2;
+  max-width: 350px;
 }
 
 .final-content h2 {
-  font-size: 70px;
+  font-size: 52px;
+  line-height: 1.1;
 }
 
 .final-content p {
-  font-size: 18px;
+  margin-top: 15px;
+  font-size: 16px;
 }
+
+/* MODAL */
 
 #modal {
   display: none;
   position: fixed;
   inset: 0;
-  z-index: 99;
-  background: rgba(0,0,0,.92);
+  z-index: 99999;
+  background: rgba(0,0,0,.94);
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 #modal span {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 22px;
+  right: 22px;
   font-size: 28px;
   cursor: pointer;
 }
@@ -351,8 +358,29 @@ button {
 #imagemModal {
   max-width: 100%;
   max-height: 85vh;
-  border-radius: 20px;
+  border-radius: 18px;
 }
+
+/* BOTÃO MÚSICA */
+
+.music-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ff477e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 10px 25px rgba(0,0,0,.4);
+}
+
+/* CORAÇÕES */
 
 .hearts {
   position: fixed;
@@ -368,64 +396,19 @@ button {
   animation: subirCoracao 6s linear forwards;
   opacity: .8;
 }
-.polaroids{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:30px;
-  margin-top:50px;
-}
 
-.polaroid{
-  width:280px;
-  background:#fff;
-  padding:15px 15px 60px;
-  border-radius:6px;
-  box-shadow:0 15px 35px rgba(0,0,0,.35);
-  transition:.4s;
-}
+/* ANIMAÇÕES */
 
-.polaroid:nth-child(odd){
-  transform:rotate(-4deg);
-}
+@keyframes subirCoracao {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: .9;
+  }
 
-.polaroid:nth-child(even){
-  transform:rotate(4deg);
-}
-
-.polaroid:hover{
-  transform:scale(1.05);
-}
-
-.polaroid img{
-  width:100%;
-  border-radius:4px;
-  cursor:pointer;
-}
-
-.polaroid p{
-  text-align:center;
-  color:#222;
-  margin-top:15px;
-  font-size:1.2rem;
-  font-family:'Great Vibes',cursive;
-}
-
-.music-btn{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  background:#ff477e;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:28px;
-  cursor:pointer;
-  z-index:999;
-  box-shadow:0 10px 25px rgba(0,0,0,.4);
+  to {
+    transform: translateY(-110vh) scale(1.8);
+    opacity: 0;
+  }
 }
 
 @keyframes subir {
@@ -440,58 +423,17 @@ button {
   }
 }
 
-@keyframes subirCoracao {
-  from {
-    transform: translateY(0) scale(1);
-    opacity: .9;
+/* AJUSTE PARA TELAS MAIORES */
+
+@media (min-width: 700px) {
+  body {
+    max-width: 430px;
+    margin: 0 auto;
+    background: #050005;
   }
 
-  to {
-    transform: translateY(-110vh) scale(1.8);
-    opacity: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  section {
-    padding: 65px 18px;
-  }
-
-  .hero-content h1 {
-    font-size: 44px;
-  }
-
-  .contador h2,
-  .mensagem h2,
-  .historia h2,
-  .galeria h2,
-  .familia h2,
-  .carta h2,
-  .conquistas h2 {
-    font-size: 40px;
-  }
-
-  #contador {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .grid img {
-    height: 210px;
-  }
-
-  .familia-card img {
-    height: 280px;
-  }
-
-  .especial-texto h2 {
-    font-size: 44px;
-  }
-
-  .final-content h2 {
-    font-size: 58px;
+  .hero,
+  main {
+    background: #120008;
   }
 }
