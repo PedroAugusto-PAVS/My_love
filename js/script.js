@@ -174,3 +174,81 @@ window.addEventListener(
 
   }
 );
+
+function toggleMusic(){
+
+  const musica =
+  document.getElementById("musica");
+ 
+  if(musica.paused){
+    musica.play();
+  }else{
+    musica.pause();
+  }
+ 
+ }
+
+ const mensagem = `
+Meu amor,
+
+Desde que você entrou na minha vida,
+tudo ficou mais bonito.
+
+Obrigado por cada sorriso,
+cada abraço,
+cada momento ao seu lado.
+
+Eu te amo infinitamente ❤️
+
+Pedro
+`;
+
+let i = 0;
+
+function escreverCarta(){
+
+ const campo =
+ document.getElementById("textoCarta");
+
+ if(!campo) return;
+
+ if(i < mensagem.length){
+
+   campo.innerHTML += mensagem.charAt(i);
+
+   i++;
+
+   setTimeout(escreverCarta,40);
+ }
+
+}
+
+setTimeout(escreverCarta,2000);
+
+
+const fotosFinal = [
+  "img/foto12.jpg",
+  "img/foto10.jpg",
+  "img/foto11.jpg",
+  "img/foto14.jpg"
+];
+
+let indiceFoto = 0;
+
+setInterval(() => {
+
+  const final =
+    document.querySelector(".final");
+
+  if (!final) return;
+
+  indiceFoto++;
+
+  if (indiceFoto >= fotosFinal.length) {
+    indiceFoto = 0;
+  }
+
+  final.style.backgroundImage =
+    `url('${fotosFinal[indiceFoto]}')`;
+
+}, 5000);
