@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feliz Dia dos Namorados ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- CORAÇÕES -->
+  <div class="hearts"></div>
+
+  <!-- MÚSICA -->
+  <audio id="musica" loop>
+    <source src="music/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <img src="img/capa.jpg" class="hero-bg">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>Feliz Dia dos Namorados ❤️</h1>
+
+      <p>
+        Uma pequena surpresa para a pessoa que mudou minha vida.
+      </p>
+
+      <button onclick="abrirSite()">
+        Abrir Minha Surpresa
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- CONTEÚDO -->
+
+  <main id="conteudo">
+
+    <!-- CONTADOR -->
+
+    <section class="contador">
+
+      <h2>Nosso Tempo Juntos ⏳</h2>
+
+      <p>
+        Desde 20 de dezembro de 2024
+      </p>
+
+      <div id="contador"></div>
+
+    </section>
+
+    <!-- HISTÓRIA -->
+
+    <section class="historia">
+
+      <h2>Nossa História ❤️</h2>
+
+      <div class="timeline">
+
+        <div class="item">
+          <span>20/12/2024</span>
+          <h3>O começo de tudo</h3>
+          <p>
+            O dia em que nossa história começou.
+          </p>
+        </div>
+
+        <div class="item">
+          <span>❤️</span>
+          <h3>Momentos Inesquecíveis</h3>
+          <p>
+            Cada abraço, cada sorriso e cada memória.
+          </p>
+        </div>
+
+        <div class="item">
+          <span>✨</span>
+          <h3>Hoje</h3>
+          <p>
+            E eu continuo me apaixonando por você todos os dias.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section class="galeria">
+
+      <h2>Nossos Momentos 📸</h2>
+
+      <div class="grid">
+
+        <img src="img/foto1.jpg" onclick="abrirImagem(this.src)">
+        <img src="img/foto2.jpg" onclick="abrirImagem(this.src)">
+        <img src="img/foto3.jpg" onclick="abrirImagem(this.src)">
+        <img src="img/foto4.jpg" onclick="abrirImagem(this.src)">
+        <img src="img/foto5.jpg" onclick="abrirImagem(this.src)">
+        <img src="img/foto6.jpg" onclick="abrirImagem(this.src)">
+        <img src="img/foto7.jpg" onclick="abrirImagem(this.src)">
+        <img src="img/foto8.jpg" onclick="abrirImagem(this.src)">
+
+      </div>
+
+    </section>
+
+    <!-- VÍDEOS -->
+
+    <section class="videos">
+
+      <h2>Nossos Vídeos ❤️</h2>
+
+      <div class="video-container">
+
+        <video controls playsinline>
+          <source src="video/video1.mp4" type="video/mp4">
+        </video>
+
+        <video controls playsinline>
+          <source src="video/video2.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+    </section>
+
+    <!-- CAPÍTULO ESPECIAL -->
+
+    <section class="especial">
+
+      <img src="img/foto5.jpg">
+
+      <div class="especial-texto">
+
+        <h2>
+          Meu Lugar Favorito ❤️
+        </h2>
+
+        <p>
+          Não importa onde estamos,
+          meu lugar favorito sempre será ao seu lado.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- CONQUISTAS -->
+
+    <section class="conquistas">
+
+      <h2>Obrigado ❤️</h2>
+
+      <img src="img/foto8.jpg">
+
+      <p>
+        Obrigado por estar ao meu lado em cada conquista,
+        cada sonho e cada etapa da minha vida.
+      </p>
+
+    </section>
+
+    <!-- CARTA -->
+
+    <section class="carta">
+
+      <h2>Uma Carta Para Você 💌</h2>
+
+      <div class="card-carta">
+
+        <p>
+
+          Meu amor,
+
+          <br><br>
+
+          Desde o dia em que você entrou na minha vida,
+          tudo ficou mais bonito.
+
+          <br><br>
+
+          Obrigado por cada sorriso,
+          cada abraço,
+          cada conselho e cada momento.
+
+          <br><br>
+
+          Você transformou dias comuns
+          em lembranças especiais.
+
+          <br><br>
+
+          Eu sou muito feliz por ter você ao meu lado.
+
+          <br><br>
+
+          Espero viver muitos outros
+          Dias dos Namorados com você.
+
+          <br><br>
+
+          Eu te amo infinitamente ❤️
+
+          <br><br>
+
+          Com amor,
+
+          <br>
+
+          Pedro ❤️
+
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- FINAL -->
+
+    <section class="final">
+
+      <div class="final-overlay"></div>
+
+      <div class="final-content">
+
+        <h2>
+          Eu Te Amo ❤️
+        </h2>
+
+        <p>
+          E continuarei te escolhendo todos os dias.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+
+  <div id="modal">
+
+    <span onclick="fecharImagem()">
+      ✖
+    </span>
+
+    <img id="imagemModal">
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
